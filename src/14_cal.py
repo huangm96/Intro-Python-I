@@ -22,3 +22,14 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+
+def printMonth(m=datetime.today().month, y=datetime.today().year):
+  if m == 0:
+    date = datetime.now()
+  else:
+    date = datetime.month(m)
+  print(date.strftime("%B"))
+
+printMonth()
+print(datetime.today().month)
