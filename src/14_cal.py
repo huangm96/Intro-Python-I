@@ -25,11 +25,15 @@ from datetime import datetime
 
 
 def printMonth(m=datetime.today().month, y=datetime.today().year):
-  if m == 0:
-    date = datetime.now()
-  else:
-    date = datetime.month(m)
-  print(date.strftime("%B"))
+  if m > 12 or m < 1:
+    m = datetime.today().month
+
+  print(calendar.month(y, m))
+
 
 printMonth()
-print(datetime.today().month)
+printMonth(12)
+printMonth(8, 2019)
+printMonth(13)
+
+
