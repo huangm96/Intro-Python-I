@@ -51,5 +51,6 @@ waypoints[0]["lon"] = -130
 # YOUR CODE HERE
 
 for i in range(len(waypoints)):
-    print(waypoints[i].values())
-    print(waypoints[i].items())
+    for x in waypoints[i]:
+        print(waypoints[i][x])
+    
