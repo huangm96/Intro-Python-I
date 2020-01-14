@@ -19,7 +19,7 @@ f.close()
 # sure that it contains what you expect it to contain
 
 # YOUR CODE HERE
-b = open("src/bar.txt","x")
+b = open("src/bar.txt","w")
 b.write("Hello")
 b.write("Hello")
 b.write("Hello")
